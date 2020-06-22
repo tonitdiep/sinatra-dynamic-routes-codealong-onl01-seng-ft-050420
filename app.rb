@@ -21,6 +21,8 @@ class App < Sinatra::Base
 
   get '/multiply/:num1/:num2' do
       binding.pry
+    @user_name = params[:name]
+    "Hello #{@user_name}!"
     # @user_num  = params[:num]
     # puts "#{params[:num1]} * #{params[:num2]}"
     # return params(@num1 * @num2)
